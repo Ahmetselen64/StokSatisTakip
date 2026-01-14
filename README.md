@@ -32,6 +32,7 @@ Ahmet Selen
 ahmetselen41@gmail.com 
 
 # Youtube tanıtım videosu
+https://youtu.be/oKMU3dr-BeI
 
 
 
