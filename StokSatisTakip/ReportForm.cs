@@ -44,7 +44,25 @@ namespace StokSatisTakip
                 toplamCiro += Convert.ToDecimal(satir["ToplamTutar"]);
             }
 
-            lblToplamCiro.Text = toplamCiro.ToString("C2"); 
+            lblToplamCiro.Text = toplamCiro.ToString("C2");
+            ReportDAL dal = new ReportDAL(); 
+            lblEnCokSatan.Text = dal.EnCokSatanUrunuBul();
+            lblEnIyiMusteri.Text = dal.EnIyiMusteriyiBul();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

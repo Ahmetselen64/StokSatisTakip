@@ -48,7 +48,7 @@ namespace StokSatis.DAL
             {
                 baglanti.Open();
                 
-                string sorgu = "SELECT urun_adi, stok_adedi, fiyat FROM urunler WHERE stok_adedi < 5";
+                string sorgu = "SELECT urun_adi, stok_adedi, fiyat FROM urunler WHERE stok_adedi < 20";
                 MySqlDataAdapter adapter = new MySqlDataAdapter(sorgu, baglanti);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
@@ -109,8 +109,36 @@ namespace StokSatis.DAL
             }
         }
 
+        public int StokAdediOgren(int urunId)
+        {
+            using (var baglanti = db.GetConnection())
+            {
+                baglanti.Open();
+                string sorgu = "SELECT stok_adedi FROM urunler WHERE id = @id";
+                MySqlCommand cmd = new MySqlCommand(sorgu, baglanti);
+                cmd.Parameters.AddWithValue("@id", urunId);
 
+                // ExecuteScalar tek bir değer (stok sayısı) döndürür
+                object sonuc = cmd.ExecuteScalar();
+                return Convert.ToInt32(sonuc);
+            }
+        }
 
+        public void UrunGuncelle(int id, string ad, decimal fiyat, int stok)
+        {
+            using (var baglanti = db.GetConnection())
+            {
+                baglanti.Open();
+                string sorgu = "UPDATE urunler SET urun_adi=@ad, fiyat=@fiyat, stok_adedi=@stok WHERE id=@id";
 
+                MySqlCommand cmd = new MySqlCommand(sorgu, baglanti);
+                cmd.Parameters.AddWithValue("@ad", ad);
+                cmd.Parameters.AddWithValue("@fiyat", fiyat);
+                cmd.Parameters.AddWithValue("@stok", stok);
+                cmd.Parameters.AddWithValue("@id", id);
+
+                cmd.ExecuteNonQuery();
+            }
+        }
     }
 }

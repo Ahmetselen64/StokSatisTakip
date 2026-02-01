@@ -40,7 +40,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(160, 121);
+            this.label1.Location = new System.Drawing.Point(175, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 16);
             this.label1.TabIndex = 0;
@@ -49,7 +49,7 @@
             // cmbUrunler
             // 
             this.cmbUrunler.FormattingEnabled = true;
-            this.cmbUrunler.Location = new System.Drawing.Point(305, 121);
+            this.cmbUrunler.Location = new System.Drawing.Point(290, 48);
             this.cmbUrunler.Name = "cmbUrunler";
             this.cmbUrunler.Size = new System.Drawing.Size(121, 24);
             this.cmbUrunler.TabIndex = 1;
@@ -57,7 +57,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(160, 175);
+            this.label2.Location = new System.Drawing.Point(175, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 16);
             this.label2.TabIndex = 2;
@@ -66,7 +66,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(168, 230);
+            this.label3.Location = new System.Drawing.Point(175, 207);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 16);
             this.label3.TabIndex = 4;
@@ -74,17 +74,17 @@
             // 
             // txtMiktar
             // 
-            this.txtMiktar.Location = new System.Drawing.Point(335, 230);
+            this.txtMiktar.Location = new System.Drawing.Point(311, 207);
             this.txtMiktar.Name = "txtMiktar";
             this.txtMiktar.Size = new System.Drawing.Size(100, 22);
             this.txtMiktar.TabIndex = 5;
             // 
             // btnSatisYap
             // 
-            this.btnSatisYap.BackColor = System.Drawing.Color.White;
-            this.btnSatisYap.Location = new System.Drawing.Point(279, 289);
+            this.btnSatisYap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnSatisYap.Location = new System.Drawing.Point(536, 109);
             this.btnSatisYap.Name = "btnSatisYap";
-            this.btnSatisYap.Size = new System.Drawing.Size(75, 85);
+            this.btnSatisYap.Size = new System.Drawing.Size(117, 85);
             this.btnSatisYap.TabIndex = 6;
             this.btnSatisYap.Text = "Satışı Onayla";
             this.btnSatisYap.UseVisualStyleBackColor = false;
@@ -93,7 +93,7 @@
             // cmbMusteriler
             // 
             this.cmbMusteriler.FormattingEnabled = true;
-            this.cmbMusteriler.Location = new System.Drawing.Point(305, 182);
+            this.cmbMusteriler.Location = new System.Drawing.Point(290, 121);
             this.cmbMusteriler.Name = "cmbMusteriler";
             this.cmbMusteriler.Size = new System.Drawing.Size(121, 24);
             this.cmbMusteriler.TabIndex = 7;
@@ -102,7 +102,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.Gray;
+            this.ClientSize = new System.Drawing.Size(800, 375);
             this.Controls.Add(this.cmbMusteriler);
             this.Controls.Add(this.btnSatisYap);
             this.Controls.Add(this.txtMiktar);

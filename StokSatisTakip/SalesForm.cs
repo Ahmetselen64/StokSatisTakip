@@ -22,20 +22,29 @@ namespace StokSatisTakip
 
         private void btnSatisYap_Click(object sender, EventArgs e)
         {
+            // 1. Önce Formdan Verileri Alalım (Değişkenleri burada TEK SEFER tanımlıyoruz)
             int secilenUrunId = Convert.ToInt32(cmbUrunler.SelectedValue);
-            int miktar = Convert.ToInt32(txtMiktar.Text);
-
-            
+            int satilacakMiktar = Convert.ToInt32(txtMiktar.Text);
             int secilenMusteriId = Convert.ToInt32(cmbMusteriler.SelectedValue);
 
             ProductDAL dal = new ProductDAL();
 
+            // 2. STOK KONTROLÜ (Hocanın istediği kısım)
+            // Veritabanından o ürünün güncel stok adedini soruyoruz
+            int mevcutStok = dal.StokAdediOgren(secilenUrunId);
+
+            if (mevcutStok < satilacakMiktar)
+            {
+                MessageBox.Show("Yetersiz Stok! Depoda sadece " + mevcutStok + " adet var. Satış yapılamaz.");
+                return; // İşlemi burada kesip bitiriyoruz, aşağıya inmez.
+            }
+
+            // 3. SATIŞ İŞLEMİ (Eğer stok varsa burası çalışır)
             try
             {
-                
-                dal.SatisKaydet(secilenUrunId, miktar, secilenMusteriId);
+                dal.SatisKaydet(secilenUrunId, satilacakMiktar, secilenMusteriId);
                 MessageBox.Show("Satış başarıyla müşteriye işlendi!");
-                this.Close();
+                this.Close(); // İşlem bitince pencereyi kapat
             }
             catch (Exception ex)
             {

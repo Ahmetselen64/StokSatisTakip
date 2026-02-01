@@ -14,6 +14,7 @@ namespace StokSatisTakip
 {
     public partial class Form1: Form
     {
+        int secilenUrunId = 0;
         public Form1()
         {
             InitializeComponent();
@@ -96,6 +97,51 @@ namespace StokSatisTakip
         {
             CustomerForm musteriFormu = new CustomerForm();
             musteriFormu.ShowDialog();
+        }
+
+        private void dgvUrunler_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow satir = dgvUrunler.Rows[e.RowIndex];
+
+                
+                txtUrunAdi.Text = satir.Cells["urun_adi"].Value.ToString();
+                txtFiyat.Text = satir.Cells["fiyat"].Value.ToString();
+                txtStok.Text = satir.Cells["stok_adedi"].Value.ToString();
+
+                
+                secilenUrunId = Convert.ToInt32(satir.Cells["id"].Value);
+            }
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            if (secilenUrunId == 0)
+            {
+                MessageBox.Show("Lütfen önce listeden güncellenecek ürünü seçin!");
+                return;
+            }
+
+            ProductDAL dal = new ProductDAL();
+
+            
+            string yeniAd = txtUrunAdi.Text;
+            decimal yeniFiyat = Convert.ToDecimal(txtFiyat.Text);
+            int yeniStok = Convert.ToInt32(txtStok.Text);
+
+            
+            dal.UrunGuncelle(secilenUrunId, yeniAd, yeniFiyat, yeniStok);
+
+            MessageBox.Show("Ürün başarıyla düzeltildi!");
+
+
+            dgvUrunler.DataSource = dal.TumUrunleriGetir(); 
+            txtUrunAdi.Clear();
+            txtFiyat.Clear();
+            txtStok.Clear();
+            secilenUrunId = 0;
         }
     }
 }

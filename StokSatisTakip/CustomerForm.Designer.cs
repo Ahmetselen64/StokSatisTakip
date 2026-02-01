@@ -42,14 +42,14 @@
             // 
             // txtAdSoyad
             // 
-            this.txtAdSoyad.Location = new System.Drawing.Point(165, 79);
+            this.txtAdSoyad.Location = new System.Drawing.Point(850, 50);
             this.txtAdSoyad.Name = "txtAdSoyad";
             this.txtAdSoyad.Size = new System.Drawing.Size(100, 22);
             this.txtAdSoyad.TabIndex = 0;
             // 
             // txtTelefon
             // 
-            this.txtTelefon.Location = new System.Drawing.Point(165, 160);
+            this.txtTelefon.Location = new System.Drawing.Point(850, 114);
             this.txtTelefon.Name = "txtTelefon";
             this.txtTelefon.Size = new System.Drawing.Size(100, 22);
             this.txtTelefon.TabIndex = 1;
@@ -57,7 +57,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(60, 84);
+            this.label1.Location = new System.Drawing.Point(696, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 2;
@@ -66,7 +66,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(63, 160);
+            this.label2.Location = new System.Drawing.Point(716, 104);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 16);
             this.label2.TabIndex = 3;
@@ -74,7 +74,7 @@
             // 
             // txtAdres
             // 
-            this.txtAdres.Location = new System.Drawing.Point(165, 241);
+            this.txtAdres.Location = new System.Drawing.Point(850, 178);
             this.txtAdres.Name = "txtAdres";
             this.txtAdres.Size = new System.Drawing.Size(100, 22);
             this.txtAdres.TabIndex = 4;
@@ -82,7 +82,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(78, 246);
+            this.label3.Location = new System.Drawing.Point(716, 178);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 16);
             this.label3.TabIndex = 5;
@@ -91,35 +91,37 @@
             // cmbMusteriTipi
             // 
             this.cmbMusteriTipi.FormattingEnabled = true;
-            this.cmbMusteriTipi.Location = new System.Drawing.Point(165, 309);
+            this.cmbMusteriTipi.Location = new System.Drawing.Point(1046, 114);
             this.cmbMusteriTipi.Name = "cmbMusteriTipi";
             this.cmbMusteriTipi.Size = new System.Drawing.Size(121, 24);
             this.cmbMusteriTipi.TabIndex = 6;
             // 
             // btnMusteriKaydet
             // 
-            this.btnMusteriKaydet.Location = new System.Drawing.Point(428, 264);
+            this.btnMusteriKaydet.BackColor = System.Drawing.Color.Lime;
+            this.btnMusteriKaydet.Location = new System.Drawing.Point(850, 272);
             this.btnMusteriKaydet.Name = "btnMusteriKaydet";
-            this.btnMusteriKaydet.Size = new System.Drawing.Size(75, 79);
+            this.btnMusteriKaydet.Size = new System.Drawing.Size(92, 97);
             this.btnMusteriKaydet.TabIndex = 7;
             this.btnMusteriKaydet.Text = "Kaydet";
-            this.btnMusteriKaydet.UseVisualStyleBackColor = true;
+            this.btnMusteriKaydet.UseVisualStyleBackColor = false;
             this.btnMusteriKaydet.Click += new System.EventHandler(this.btnMusteriKaydet_Click);
             // 
             // dgvMusteriler
             // 
             this.dgvMusteriler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMusteriler.Location = new System.Drawing.Point(579, 12);
+            this.dgvMusteriler.Location = new System.Drawing.Point(12, 12);
             this.dgvMusteriler.Name = "dgvMusteriler";
             this.dgvMusteriler.RowHeadersWidth = 51;
             this.dgvMusteriler.RowTemplate.Height = 24;
-            this.dgvMusteriler.Size = new System.Drawing.Size(544, 234);
+            this.dgvMusteriler.Size = new System.Drawing.Size(544, 412);
             this.dgvMusteriler.TabIndex = 8;
             // 
             // CustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1219, 450);
             this.Controls.Add(this.dgvMusteriler);
             this.Controls.Add(this.btnMusteriKaydet);
