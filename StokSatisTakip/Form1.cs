@@ -143,5 +143,7 @@ namespace StokSatisTakip
             txtStok.Clear();
             secilenUrunId = 0;
         }
+
+       
     }
 }

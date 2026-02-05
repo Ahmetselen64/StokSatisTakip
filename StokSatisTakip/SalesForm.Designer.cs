@@ -40,16 +40,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(175, 48);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(284, 152);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 16);
+            this.label1.Size = new System.Drawing.Size(93, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ürün Seçin";
             // 
             // cmbUrunler
             // 
             this.cmbUrunler.FormattingEnabled = true;
-            this.cmbUrunler.Location = new System.Drawing.Point(290, 48);
+            this.cmbUrunler.Location = new System.Drawing.Point(475, 152);
             this.cmbUrunler.Name = "cmbUrunler";
             this.cmbUrunler.Size = new System.Drawing.Size(121, 24);
             this.cmbUrunler.TabIndex = 1;
@@ -57,32 +58,34 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(175, 124);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(277, 230);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 16);
+            this.label2.Size = new System.Drawing.Size(113, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Müşteri Seçin";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(175, 207);
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(277, 318);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 16);
+            this.label3.Size = new System.Drawing.Size(104, 23);
             this.label3.TabIndex = 4;
             this.label3.Text = "Satış Miktarı";
             // 
             // txtMiktar
             // 
-            this.txtMiktar.Location = new System.Drawing.Point(311, 207);
+            this.txtMiktar.Location = new System.Drawing.Point(475, 318);
             this.txtMiktar.Name = "txtMiktar";
             this.txtMiktar.Size = new System.Drawing.Size(100, 22);
             this.txtMiktar.TabIndex = 5;
             // 
             // btnSatisYap
             // 
-            this.btnSatisYap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnSatisYap.Location = new System.Drawing.Point(536, 109);
+            this.btnSatisYap.BackColor = System.Drawing.Color.Olive;
+            this.btnSatisYap.Location = new System.Drawing.Point(737, 201);
             this.btnSatisYap.Name = "btnSatisYap";
             this.btnSatisYap.Size = new System.Drawing.Size(117, 85);
             this.btnSatisYap.TabIndex = 6;
@@ -93,7 +96,7 @@
             // cmbMusteriler
             // 
             this.cmbMusteriler.FormattingEnabled = true;
-            this.cmbMusteriler.Location = new System.Drawing.Point(290, 121);
+            this.cmbMusteriler.Location = new System.Drawing.Point(475, 227);
             this.cmbMusteriler.Name = "cmbMusteriler";
             this.cmbMusteriler.Size = new System.Drawing.Size(121, 24);
             this.cmbMusteriler.TabIndex = 7;
@@ -102,8 +105,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(800, 375);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(1084, 543);
             this.Controls.Add(this.cmbMusteriler);
             this.Controls.Add(this.btnSatisYap);
             this.Controls.Add(this.txtMiktar);
