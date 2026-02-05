@@ -7,27 +7,30 @@ Yazılımın teknik mimarisi, yüksek performans ve güvenli veri depolama ilkel
 Projeyi yerel bilgisayarınızda çalıştırmak için öncelikle bu depoyu sisteminize klonlamanız ve gerekli yazılım çalışma ortamının kurulu olduğundan emin olmanız gerekmektedir. Bağımlılıkların yüklenmesinin ardından, yapılandırma dosyasındaki veritabanı bağlantı ayarlarını kendi yerel sunucunuza göre düzenleyerek uygulamayı başlatabilirsiniz. Geliştirmeye açık olan bu yapı sayesinde, ihtiyaçlarınıza göre yeni modüller ekleyebilir veya mevcut özellikleri özelleştirebilirsiniz. Her türlü katkı ve geri bildirim, projenin daha ileriye taşınması için memnuniyetle karşılanacaktır.
 
 ## Giriş ekranı 
-<img width="744" height="498" alt="Ekran görüntüsü 2026-01-31 233312" src="https://github.com/user-attachments/assets/3ac6ee6c-d66f-4256-99d3-558d7caba40c" />
+<img width="1036" height="623" alt="Ekran görüntüsü 2026-02-05 162015" src="https://github.com/user-attachments/assets/4913ee5a-de08-4e6a-845c-c3c04893037b" />
+
  
 
 
 ## Ana Menü 
-<img width="1187" height="610" alt="Ekran görüntüsü 2026-01-31 233332" src="https://github.com/user-attachments/assets/489c706c-f133-4971-8b09-3bd9b80a5989" />
+<img width="1284" height="629" alt="Ekran görüntüsü 2026-02-05 162042" src="https://github.com/user-attachments/assets/0ea44ae6-5990-49ad-9561-508d58288ffd" />
+
 
 
 
 ## Rapor Ekranı
-<img width="1211" height="603" alt="Ekran görüntüsü 2026-01-31 233417" src="https://github.com/user-attachments/assets/a7dd6eeb-9c63-4580-a4db-8a379248a644" />
+<img width="1221" height="597" alt="Ekran görüntüsü 2026-02-05 162057" src="https://github.com/user-attachments/assets/5fd279d3-e812-441d-bcb3-28eb1c9985c6" />
+
 
 
 
 ## Satış Ekranı 
-<img width="1135" height="488" alt="Ekran görüntüsü 2026-01-31 233343" src="https://github.com/user-attachments/assets/f68750f1-ac0d-4818-824b-92a19c4ea293" />
+<img width="1054" height="657" alt="Ekran görüntüsü 2026-02-05 162145" src="https://github.com/user-attachments/assets/dd5ed5e9-6707-474a-9728-98e2ffa55649" />
 
 
 
 ## Müşteri Ekranı
-<img width="745" height="422" alt="Ekran görüntüsü 2026-01-31 233404" src="https://github.com/user-attachments/assets/c6c6f575-b7e6-48b0-94b4-1b788db19b3b" />
+<img width="1916" height="1022" alt="Ekran görüntüsü 2026-02-05 162135" src="https://github.com/user-attachments/assets/8381e3fd-4a41-47b0-ae2c-a77ef2efc084" />
 
 # İletişim Bilgileri
 Herhangi bir sorununuz veya öneriniz varsa benimle iletişime geçin 
